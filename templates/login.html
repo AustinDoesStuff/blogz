@@ -2,7 +2,12 @@
 
 {% block content %}
 <form method="post">
-    <input type="text" name="username"/><span>{{% error %}}
-    <input type="password" name="password"/>
+    <span>Username:</span><input type="text" name="username"/><span>{{ error }}
+        <br>
+        <br>
+    <span>Password:</span><input type="password" name="password"/>
+    <br>
+    <br>
+    <input type="submit" value="Login"/>
 </form>
 {% endblock content %}
